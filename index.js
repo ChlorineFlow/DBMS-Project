@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.static('public'));
 // Define a simple route
 app.get('/', (req, res) => {
-    res.render('index.html');
+    res.render('index.ejs');
 });
 
 // Start the server
