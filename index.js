@@ -3,12 +3,16 @@ const app = express();
 const port = 3000;
 const path = require("path");
 
-app.use(express.static('public'));
+// Serve static files (CSS, JS, images)
+app.use(express.static(path.join(__dirname, "public")));
+
+// Serve the media folder (for the logo)
+app.use('/media', express.static(path.join(__dirname, "views", "media")));
+
 // Set the view engine to EJS
 app.set("view engine", "ejs");
 
-// Serve static files (CSS, JS, images)app.use(express.static(path.join(__dirname, "public")));
-// Define a simple route
+// Define routes
 app.get('/', (req, res) => {
     res.render('index.ejs');
 });
