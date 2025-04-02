@@ -65,6 +65,30 @@ app.get('/admin_details', (req, res) => {
     res.render('admin_detail.ejs');
 });
 
+app.get('/admin_details/vigilance', (req, res) => {
+    res.render('vigilance.ejs');
+});
+
+app.get('/admin_details/detention_list', (req, res) => {
+    res.render('detention_list.ejs');
+});
+
+app.get('/admin_details/mess_details', (req, res) => {
+    res.render('mess.ejs');
+});
+
+app.get('/admin_details/hostel_details', (req, res) => {
+    res.render('hostel.ejs');
+});
+
+app.get('/admin_details/complaint_log', (req, res) => {
+    res.render('complaint.ejs');
+});
+
+app.get('/admin_details/infrastructure_details', (req, res) => {
+    res.render('infrastructure.ejs');
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
