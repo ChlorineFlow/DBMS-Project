@@ -29,6 +29,42 @@ app.get('/admin_login', (req, res) => {
     res.render('admin_login.ejs');
 });
 
+app.get('/student_details', (req, res) => {
+    res.render('student_detail.ejs');
+});
+
+app.get('/student_details/attendance', (req, res) => {
+    res.render('attendance.ejs');
+});
+
+app.get('/student_details/academia', (req, res) => {
+    res.render('academia.ejs');
+});
+
+app.get('/student_details/student_course_feedback', (req, res) => {
+    res.render('student_course_feedback.ejs');
+});
+
+app.get('/faculty_details', (req, res) => {
+    res.render('faculty_detail.ejs');
+});
+
+app.get('/faculty_details/faculty_achievements', (req, res) => {
+    res.render('faculty_achievements.ejs');
+});
+
+app.get('/faculty_details/courses_handled', (req, res) => {
+    res.render('courses_handled.ejs');
+});
+
+app.get('/faculty_details/finance_updates', (req, res) => {
+    res.render('finance_updates.ejs');
+});
+
+app.get('/admin_details', (req, res) => {
+    res.render('admin_detail.ejs');
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
