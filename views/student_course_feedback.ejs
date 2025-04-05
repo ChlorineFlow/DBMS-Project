@@ -19,32 +19,32 @@
   </style>
 </head>
 <body class="min-h-screen p-6">
-    <header class="mb-8">
-        <nav class="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-lg">
-          <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
-            <a href="#" class="text-2xl font-bold text-cyan-300">Student Portal</a>
-            <button class="md:hidden text-white focus:outline-none" onclick="document.getElementById('navLinks').classList.toggle('hidden')">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-            <div class="w-full md:flex md:items-center md:w-auto hidden md:block" id="navLinks">
-              <ul class="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 md:space-x-6 text-white">
-                <li><a class="hover:text-cyan-400" href="/">Home</a></li>
-                <li><a class="hover:text-cyan-400" href="/student_details">Dashboard</a></li>
-                <li><a class="hover:text-cyan-400" href="/student_details/attendance">Attendance</a></li>
-                <li><a class="hover:text-cyan-400" href="/student_details/academia">Academic Details</a></li>
-                <li><a class="hover:text-cyan-400" href="/student_details/student_course_feedback">Feedback</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <header class="mb-8">
+    <nav class="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-lg">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between">
+        <a href="#" class="text-2xl font-bold text-cyan-300">Student Portal</a>
+        <button class="md:hidden text-white focus:outline-none" onclick="document.getElementById('navLinks').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+        <div class="w-full md:flex md:items-center md:w-auto hidden md:block" id="navLinks">
+          <ul class="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 md:space-x-6 text-white">
+            <li><a class="hover:text-cyan-400" href="/">Home</a></li>
+            <li><a class="hover:text-cyan-400" href="/student_details">Dashboard</a></li>
+            <li><a class="hover:text-cyan-400" href="/student_details/attendance">Attendance</a></li>
+            <li><a class="hover:text-cyan-400" href="/student_details/academia">Academic Details</a></li>
+            <li><a class="hover:text-cyan-400" href="/student_details/student_course_feedback">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <div class="max-w-4xl mx-auto space-y-10">
-    <!-- Feedback Forms -->
+    <!-- Subject Feedback -->
     <div class="bg-white/10 p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4">Subject Feedback</h2>
       <form class="space-y-4">
-        <select class="w-full p-2 rounded" required>
+        <select class="w-full p-2 rounded text-black" required>
           <option value="">Select Subject</option>
           <option>Maths</option>
           <option>DSA</option>
@@ -52,49 +52,54 @@
           <option>DBMS</option>
           <option>ML</option>
         </select>
-        <textarea rows="4" class="w-full p-2 rounded" placeholder="Enter your feedback here..."></textarea>
+        <textarea rows="4" class="w-full p-2 rounded text-black" placeholder="Enter your feedback here..."></textarea>
         <button class="bg-lime-500 hover:bg-lime-600 px-4 py-2 rounded text-black font-semibold">Submit</button>
       </form>
     </div>
 
+    <!-- Hostel Feedback -->
     <div class="bg-white/10 p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4">Hostel Feedback</h2>
       <form class="space-y-4">
-        <input type="text" class="w-full p-2 rounded" placeholder="Hostel Name/Block" required />
-        <textarea rows="4" class="w-full p-2 rounded" placeholder="Describe your experience..."></textarea>
+        <input type="text" class="w-full p-2 rounded text-black" placeholder="Hostel Name/Block" required />
+        <textarea rows="4" class="w-full p-2 rounded text-black" placeholder="Describe your experience..."></textarea>
         <button class="bg-lime-500 hover:bg-lime-600 px-4 py-2 rounded text-black font-semibold">Submit</button>
       </form>
     </div>
 
+    <!-- Infrastructure Feedback -->
     <div class="bg-white/10 p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4">Infrastructure Feedback</h2>
       <form class="space-y-4">
-        <textarea rows="4" class="w-full p-2 rounded" placeholder="Feedback on campus infrastructure..."></textarea>
+        <textarea rows="4" class="w-full p-2 rounded text-black" placeholder="Feedback on campus infrastructure..."></textarea>
         <button class="bg-lime-500 hover:bg-lime-600 px-4 py-2 rounded text-black font-semibold">Submit</button>
       </form>
     </div>
 
+    <!-- Mess Feedback -->
     <div class="bg-white/10 p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4">Mess Feedback</h2>
       <form class="space-y-4">
-        <textarea rows="4" class="w-full p-2 rounded" placeholder="How was the food and hygiene?"></textarea>
+        <textarea rows="4" class="w-full p-2 rounded text-black" placeholder="How was the food and hygiene?"></textarea>
         <button class="bg-lime-500 hover:bg-lime-600 px-4 py-2 rounded text-black font-semibold">Submit</button>
       </form>
     </div>
 
+    <!-- Faculty Feedback -->
     <div class="bg-white/10 p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4">Faculty Feedback</h2>
       <form class="space-y-4">
         <input type="text" class="w-full p-2 rounded" placeholder="Faculty Name" required />
-        <textarea rows="4" class="w-full p-2 rounded" placeholder="Feedback on teaching, approachability, etc."></textarea>
+        <textarea rows="4" class="w-full p-2 rounded text-black" placeholder="Feedback on teaching, approachability, etc."></textarea>
         <button class="bg-lime-500 hover:bg-lime-600 px-4 py-2 rounded text-black font-semibold">Submit</button>
       </form>
     </div>
 
+    <!-- Overall Ambience Feedback -->
     <div class="bg-white/10 p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold mb-4">Overall Ambience Feedback</h2>
       <form class="space-y-4">
-        <textarea rows="4" class="w-full p-2 rounded" placeholder="Feedback on campus vibe, cleanliness, etc."></textarea>
+        <textarea rows="4" class="w-full p-2 rounded text-black" placeholder="Feedback on campus vibe, cleanliness, etc."></textarea>
         <button class="bg-lime-500 hover:bg-lime-600 px-4 py-2 rounded text-black font-semibold">Submit</button>
       </form>
     </div>
